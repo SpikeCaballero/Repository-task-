@@ -23,7 +23,7 @@ def calculation(number1, number2, mathematical_operator):
     except ZeroDivisionError:
         print("Sorry but you can't divide by Zero! ")
 
-
+user_name = input("Please enter your name : ").capitalize()
 user_number1 = float(input("Please enter the first number of your calculation : "))
 user_number2 = float(input("Please enter the second number of your calculation : "))
 
@@ -42,4 +42,6 @@ while True:
         break
 
 calc = calculation(user_number1, user_number2, operator)
-print(calc)
+print(f" well, {user_name} your calculation of {user_number1} {operator} {user_number2} = {calc} ")
+
+
